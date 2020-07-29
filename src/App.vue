@@ -6,21 +6,20 @@
 </template>
 
 <script>
-import RandomText from "./components/RandomText.vue";
-import RandomImage from "./components/RandomImage.vue";
+import RandomText from './components/RandomText.vue'
+import RandomImage from './components/RandomImage.vue'
 
 export default {
-  name: "App",
+  name: 'App',
   components: {
     RandomText,
-    RandomImage
-  }
-};
+    RandomImage,
+  },
+}
 </script>
 
 <style lang="stylus" scoped>
-  #app
-    width 100%
-    height 100%
-
+#app
+  width 100%
+  height 100%
 </style>
