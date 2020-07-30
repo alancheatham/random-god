@@ -7,7 +7,6 @@ import quotes from '../assets/quotes.json'
 
 export default {
   name: 'RandomText',
-  computed: {},
   methods: {
     randomNumber(max) {
       return Math.floor(Math.random() * Math.floor(max))
