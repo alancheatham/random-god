@@ -3,10 +3,6 @@
 </template>
 
 <script>
-const a = function () {
-  return 'hi'
-}
-a()
 export default {
   name: 'RandomText',
   data() {
