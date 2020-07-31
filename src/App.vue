@@ -16,8 +16,8 @@ export default {
   components: {
     RandomText,
     RandomImage,
-    RandomVideo
-  }
+    RandomVideo,
+  },
 }
 </script>
 

@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'RandomVideo'
+  name: 'RandomVideo',
 }
 </script>
 
