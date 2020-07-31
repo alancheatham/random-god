@@ -7,13 +7,13 @@ export default {
   name: 'RandomText',
   data() {
     return {
-      images: [],
+      images: []
     }
   },
   computed: {},
   methods: {
     importImages(r) {
-      r.keys().forEach((key) =>
+      r.keys().forEach(key =>
         this.images.push({ pathLong: r(key), pathShort: key })
       )
     },
@@ -31,19 +31,20 @@ export default {
     imageStyle() {
       return {
         top: `${this.randomNumber(50)}%`,
-        left: `${this.randomNumber(50)}%`,
+        left: `${this.randomNumber(50)}%`
       }
-    },
+    }
   },
   mounted() {
     this.importImages(
       require.context('../assets/images/', true, /\.jpg|\.png$/)
     )
-  },
+  }
 }
 </script>
 
 <style lang="stylus" scoped>
-img
-  position absolute
+img {
+  position: absolute;
+}
 </style>

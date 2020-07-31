@@ -25,10 +25,10 @@ export default {
         color: this.randomColor(),
         fontSize: `${this.randomNumber(150)}px`,
         top: `${this.randomNumber(80)}%`,
-        left: `${this.randomNumber(80)}%`,
+        left: `${this.randomNumber(80)}%`
       }
-    },
-  },
+    }
+  }
 }
 </script>
 
