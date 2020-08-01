@@ -44,7 +44,6 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-img {
-  position: absolute;
-}
+img
+  position absolute
 </style>

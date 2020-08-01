@@ -1,29 +1,19 @@
 <template>
   <div id="app">
-    <RandomImage />
-    <RandomText />
-    <RandomVideo />
+    <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/random">Random</router-link>
+    </div>
+    <router-view />
   </div>
 </template>
 
-<script>
-import RandomText from './components/RandomText.vue'
-import RandomImage from './components/RandomImage.vue'
-import RandomVideo from './components/RandomVideo.vue'
-
-export default {
-  name: 'App',
-  components: {
-    RandomText,
-    RandomImage,
-    RandomVideo,
-  },
-}
-</script>
-
-<style lang="stylus" scoped>
-#app {
-  width: 100%;
-  height: 100%;
-}
+<style lang="stylus">
+#app
+  font-family Avenir, Helvetica, Arial, sans-serif
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
+  text-align center
+  color #2c3e50
+  margin-top 60px
 </style>
