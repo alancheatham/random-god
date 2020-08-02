@@ -1,10 +1,13 @@
 <template>
-  <video muted loop autoplay src="../assets/videos/pyramids.mp4"></video>
+  <video muted loop autoplay :src="src"></video>
 </template>
 
 <script>
 export default {
   name: 'RandomVideo',
+  props: {
+    src: String,
+  },
 }
 </script>
 

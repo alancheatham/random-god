@@ -2,7 +2,8 @@
   <div id="app">
     <RandomImage />
     <RandomText />
-    <RandomVideo />
+    <RandomVideo src="/assets/videos/birds.mp4" />
+    <RandomVideo class="front" src="/assets/videos/pyrmaids.mp4" />
   </div>
 </template>
 
@@ -22,8 +23,13 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-#app {
-  width: 100%;
-  height: 100%;
-}
+#app
+  width 100%
+  height 100%
+
+.front
+  width 500px
+  position absolute
+  top 33%
+  left 33%
 </style>
