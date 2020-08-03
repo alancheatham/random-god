@@ -2,8 +2,11 @@
   <div id="app">
     <RandomImage />
     <RandomText />
-    <RandomVideo src="/assets/videos/birds.mp4" />
-    <RandomVideo class="front" src="/assets/videos/pyrmaids.mp4" />
+    <RandomVideo :src="require('../assets/videos/birds.mp4')" />
+    <RandomVideo
+      class="front"
+      :src="require('../assets/videos/pyramids.mp4')"
+    />
   </div>
 </template>
 
